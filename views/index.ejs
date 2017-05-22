@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>MY APP</title>
+</head>
+
+<body>
+  <h1>Leaderboard</h1>
+  <table class="scores" border="1">
+  <tr>
+  <th>Username</th>
+  <th>Score</th>
+  </tr>
+  <% for(var i=0; i<scores.length; i++) {%>
+  <tr>
+    <td><%= scores[i].name %></td>
+    <td><%= scores[i].score %></td>
+  </tr>
+  <% } %>
+  </table>
+  <form action="/addscore" method="POST">
+    <input type="text" placeholder="name" name="name">
+    <input type="number" placeholder="score" name="score">
+    <button type="submit">Submit</button>
+  </form>
+</body>
+
+</html>
+
+
