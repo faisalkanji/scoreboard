@@ -1,12 +1,11 @@
-# scoreboard
+### Scoreboard Example App
 Scoreboard app in Node.js + Express + MongoDB
-Add scores to leaderboard + view in descending order
 
-#Install + run 
+###Getting Started
+1. npm install
+2. node server.js
+3. navigate to localhost:3000
 
-npm install 
-
-node server.js
-
-naviage to localhost:3000
-
+###Features
+1. Add score to leaderboard
+2. View scores in descending order
